@@ -1,0 +1,484 @@
+html, body {
+	width: 100%;
+	margin: 0;
+	background-color : #343434;
+	height: 100%;
+}
+
+body {
+	overflow-x : hidden;
+}
+.arrow {
+	position: fixed;
+	height: 42px;
+	width: 42px;
+	top: 30%;
+	background-image: url('../images/navAppear.png');
+	display: none;
+}
+#leftarrow {
+	left: 0;
+}
+#rightarrow {
+	right: 0;
+	background-position: 42px center;
+}
+#leftarrow:hover, #rightarrow:hover{
+	background-image: url('../images/navHover.png');
+}
+
+#shrink {
+	position: fixed;
+	bottom: -5px;
+	right: 0;
+}
+
+/* Navigation */
+#navigation {
+	border-bottom: 1px solid #69696A;
+	width: 100%;
+	background-color : #323232;
+}
+#navigation ul {
+	height: 40px;
+	width: 804px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+}
+#navigation ul li {
+	float: left;
+	list-style: none;
+	height: 40px;
+	width: 64px;
+	margin: 0;
+	padding: 0 10px 0 0;
+}
+#navigation ul li:last-child {
+	padding: 0;
+}
+#navigation ul li a {
+	text-align: center;
+	color: #69696A;
+	display: block;
+	height: 30px;
+	width: 64px;
+	font-family: Georgia, serif;
+	font-style: italic;
+	text-decoration: none;
+	padding-top: 10px;
+}
+#navigation ul li:first-child a img {
+	margin-top: -3px;
+}
+#navigation ul li a.grey {
+	border-bottom: 5px solid #69696A;
+	height: 25px;
+}
+
+#navigation ul li a img{
+	border : none;
+}
+
+
+#navigation ul li a.yellow:hover,
+#navigation ul li a.yellow.active {
+	border-bottom: 5px solid #ffdc21;
+	height: 25px;
+	color: #e8e8e8;
+}
+#navigation ul li a.pink:hover,
+#navigation ul li a.pink.active {
+	border-bottom: 5px solid #ff6cbf;
+	height: 25px;
+	color: #e8e8e8;
+}
+#navigation ul li a.blue:hover,
+#navigation ul li a.blue.active {
+	border-bottom: 5px solid #39d5f9;
+	height: 25px;
+	color: #e8e8e8;
+}
+#navigation #disclaimer {
+	color: #e8e8e8;
+	border-top: 1px solid #69696A;
+	text-align: center;
+	padding: 10px 20px;
+}
+@media all and (min-device-width:1000px) { #navigation #disclaimer { display: none; } }
+
+/* Titres */
+.back {
+	width: 100%;
+	min-width: 800px;
+}
+#home_back { background: url('../images/titre/home_back.png') repeat-x left 223px; }
+#titre1_body { background: url('../images/titre/pinkarms.png') repeat-y center top; }
+#titre2_back { background: url('../images/titre/titre2_back.png') repeat-x left 197px; }
+#titre3_body { background: url('../images/titre/yellowarms.png') repeat-y center top;}
+#titre4_back { background: url('../images/titre/titre4_back.png') repeat-x left 200px; }
+#titre4_body { background: url('../images/titre/titre4_back_bottom.png') repeat-y center top;}
+#titre5_body { background: url('../images/titre/bluearms.png') repeat-y center top; }
+
+#titre1_body, #titre3_body, #titre4_body, #titre5_body { min-width: 800px; }
+
+.block {
+	margin: 0 auto;
+	width: 550px;
+	padding: 83px 125px 0 125px;
+}
+#home_block { background: url('../images/titre/home.png') no-repeat left top; height: 367px; }
+#titre1_block { background: url('../images/titre/titre1.png') no-repeat left top; height: 382px; }
+#titre2_block { background: url('../images/titre/titre2.png') no-repeat left top; height: 288px; }
+#titre3_block { background: url('../images/titre/titre3.png') no-repeat left top; height: 281px; }
+#titre4_block { background: url('../images/titre/titre4.png') no-repeat left top; height: 442px; }
+#titre5_block { background: url('../images/titre/titre5.png') no-repeat left top; height: 308px; }
+#thanks_block { background: url('../images/titre/thanks.png') no-repeat left top; height: 348px; padding-top: 122px; }
+
+.title {
+	text-align: center;
+	margin: 25px 30px 0;
+	padding: 0 0 25px 0;
+	color: #343434;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 60px;
+	text-shadow: 1px 1px white;
+	font-weight: normal;
+	border-bottom: 1px solid #8a8a8a;
+	-moz-box-shadow: 0 2px 1px -1px white;
+	-webkit-box-shadow: 0 2px 1px -1px white;
+	box-shadow: 0 1px 1px -1px white;
+}
+
+.title span {
+	font-size: 21px;
+	font-family: Georgia, serif;
+	font-style: italic;
+	color: #666666;
+	margin-bottom: 15px;
+	display: block;
+}
+
+#thanks_title {
+	margin-top: 40px;
+	padding-bottom: 20px;
+	border-bottom: 0;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.chapo {
+	text-align: center;
+	font-size: 18px;
+	font-family: Georgia, serif;
+	text-shadow: 1px 1px white;
+	color: #666666;
+	margin: 15px 30px 0;
+}
+#titre1_chapo a { color: #ff669d; }
+#titre2_chapo a { color: #007388; }
+#titre3_chapo a { color: #d28a00; }
+#titre4_chapo a { color: #ff669d; }
+#titre5_chapo a { color: #007388; }
+
+/* Cas particuliers home */
+.comment {
+	text-align: center;
+	font-size: 13px;
+	font-family: Georgia, serif;
+	text-shadow: 1px 1px white;
+	color: #343434;
+	margin-top: 15px;
+}
+.comment a {
+	color: #343434;
+}
+#signature {
+	background: url('../images/titre/signature.png') repeat-x left center;
+	width: 567px;
+	margin: 25px auto 0;
+	text-align: center;
+	padding: 0;
+	font-weight: normal;
+}
+#signature span {
+	background: #343434;
+	font-family: Georgia, serif;
+	color: white;
+	font-size: 21px;
+	letter-spacing: 1px;
+}
+#signature a {
+	color: #ffff51;
+	text-decoration: none;
+}
+#signature a:hover {
+	text-decoration: underline;
+}
+
+/* Cas particulier thanks */
+#thanks_comment {
+	text-align: center;
+	font-size: 18px;
+	font-family: Georgia, serif;
+	text-shadow: 1px 1px white;
+	color: #666666;
+	padding: 0 120px;
+	padding-bottom : 52px;
+	border-bottom: 1px solid #8a8a8a;
+}
+#video_lines {
+	padding:20px 0;
+	border-top: 1px solid #686869;
+	border-bottom: 1px solid #686869;
+}
+#video {
+	width: 800px;
+	margin: 0 auto;
+	font-family: Georgia, serif;
+	color: white;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+/* Image fixedwidth */
+
+#fixedwidth {
+	height: 1082px;
+	width: 800px;
+	background: url('../images/fixedwidth.png');
+	margin: 0 auto;
+}
+
+/* Gros taille par défaut */
+.fullwidth{
+	height: 250px;
+	width:100%;
+}
+.grosFg, .grosR, .grosSc1 { margin-top: 20px; }
+.grosMainDroite{
+	width: 50px;
+	height: 250px;
+	float:right;
+}
+.grosMainGauche	{
+	width: 50px;
+	height: 250px;
+	float:left;
+}
+.gros {
+	height: 250px;
+}
+.gros img {
+	display: none;
+	height: 250px;
+	margin: 0 auto;
+}
+.gros img.grosSerre, .gros img.grosSerreBulle {
+	width: 100%;
+}
+.gros img.grosNormal {
+	display: block;
+}
+
+.grosSc1 { background : url(../images/gros/common/grosBras.png) repeat-x left top; }
+.grosSc1 .grosMainDroite { background: url(../images/gros/common/grosMainDroite.png) no-repeat left top; }
+.grosSc1 .grosMainGauche { background: url(../images/gros/common/grosMainGauche.png) no-repeat left top; }
+
+.grosSc2 { background : url(../images/gros/common/grosBras.png) repeat-x left top; }
+.grosSc2 .grosMainDroite { background: url(../images/gros/common/grosMainDroite.png) no-repeat left top; }
+.grosSc2 .grosMainGauche { background: url(../images/gros/common/grosMainGauche.png) no-repeat left top; }
+
+.grosSc3 { background : url(../images/gros/common/grosBras.png) repeat-x left top; }
+.grosSc3 .grosMainDroite { background: url(../images/gros/common/grosMainDroite.png) no-repeat left top; }
+.grosSc3 .grosMainGauche { background: url(../images/gros/common/grosMainGauche.png) no-repeat left top; }
+
+.grosFg { background : url(../images/gros/common/grosBras.png) repeat-x left top; }
+.grosFg .grosMainDroite { background: url(../images/gros/common/grosMainDroite.png) no-repeat left top; }
+.grosFg .grosMainGauche { background: url(../images/gros/common/grosMainGauche.png) no-repeat left top; }
+
+.grosR { background : url(../images/gros/common/grosBras.png) repeat-x left top; }
+.grosR .grosMainDroite { background: url(../images/gros/common/grosMainDroite.png) no-repeat left top; }
+.grosR .grosMainGauche { background: url(../images/gros/common/grosMainGauche.png) no-repeat left top; }
+
+.ligne3Gauche{
+	height: 300px;
+	width: 50%;
+	float: left;
+}
+.moyenMainDroite {
+	width: 53px;
+	height: 300px;
+	float: right;
+}
+.moyenMainGauche {
+	float: left;
+	width: 53px;
+	height: 300px;
+}
+.moyen {
+	height: 300px;
+}
+.moyen img {
+	display: none;
+	height: 300px;
+	margin: 0 auto;
+}
+.moyen img.moyenSerre {
+	width: 100%;
+}
+.moyen img.moyenNormal {
+	display: block;
+}
+
+.moyenFg { background: url(../images/moyen/fluidgrid/moyenBras.png) repeat-x left top; }
+.moyenFg .moyenMainDroite { background: url(../images/moyen/fluidgrid/moyenMainDroite.png) no-repeat left top; }
+.moyenFg .moyenMainGauche { background: url(../images/moyen/fluidgrid/moyenMainGauche.png) no-repeat left top; }
+
+.moyenR { background: url(../images/moyen/responsive/moyenBras.png) repeat-x left top; }
+.moyenR .moyenMainDroite { background: url(../images/moyen/responsive/moyenMainDroite.png) no-repeat left top; }
+.moyenR .moyenMainGauche { background: url(../images/moyen/responsive/moyenMainGauche.png) no-repeat left top; }
+
+#ligne2{
+	width: 100%;
+}
+.petit{
+	width:25%;
+	height: 300px;
+	float:left;
+}
+.petit img{
+	width:100%;
+	height: 300px;
+}
+#ligne3 .petit{
+	float : left;
+}
+.petitSemiEtire {
+	display : none;
+}
+.petitEtire {
+	display : none;
+}
+.petitSerre {
+	display : none;
+}
+
+@media all and (min-width: 850px) {
+	/* Changement de tronche du gros, semi-étiré */
+	.gros img.grosNormal { display: none; } .gros img.grosSemiEtire { display: block; }
+}
+
+@media all and (min-width: 950px) {
+	/* Changement de tronche du gros, étiré */
+	.gros img.grosSemiEtire { display: none; } .gros img.grosEtire { display: block; }
+
+	/* Petit devient étiré */
+	.petitNormal {
+		display : none;
+	}
+	
+
+	.petitEtire {
+		display : inline;
+	}
+
+	/* Moyen devient étiré */
+	.moyen img.moyenNormal { display: none; } .moyen img.moyenEtire { display: block; }
+}
+
+@media all and (min-width: 980px) {
+	/* Bulle du gros étiré */
+	.gros img.grosEtire { display: none; } .gros img.grosEtireBulle { display: block; }
+}
+
+@media all and (max-width: 800px) {
+	/* Moyen devient semi-serré */
+	.moyen img.moyenNormal { display: none; } .moyen img.moyenSemiSerre { display: block; }
+}
+
+@media all and (max-width: 600px) {
+	/* Moyen serré */
+	.moyenMainGauche, .moyenMainDroite {
+		display: none;
+	}
+	.moyen .moyenSerre {
+		display: inline;
+	}
+	.moyen img.moyenSemiSerre {
+		display: none;
+	}
+	.ligne3Gauche {
+		background: none;
+	}
+
+	/* Petit devient serré */
+	.petitNormal {
+		display : none;
+	}
+	.petitSerre {
+		display : inline;
+	}
+}
+
+@media all and (max-width: 500px) {
+
+	/* Gros devient serré */
+	.fullwidth{
+		background : none;
+	}
+	.grosMainDroite{
+		display: none;
+	}	
+	.grosMainGauche	{
+		display: none;
+	}
+	img.grosNormal {
+		display: none !important;
+	}
+	.gros img.grosSerre {
+		display:inline;
+	}
+
+	/* Saut du responsive le cas échéant */
+	.responsive .petit {
+		width: 50%;
+	}
+	.responsive .ligne3Gauche {
+		width: 100%;
+	}
+	.responsive .petitNormal {
+		display: inline;
+	}
+	.responsive .petitSerre {
+		display: none;
+	}
+
+	.responsive .ligne3Gauche{
+		background: url(../images/moyen/responsive/moyenBras.png) repeat-x;
+	}
+	.responsive .moyenMainGauche, .responsive .moyenMainDroite {
+		display: inline;
+	}
+	.responsive .moyen .moyenSerre {
+		display: none;
+	}
+	.responsive .moyen img.moyenSemiSerre {
+		display: block;
+	}
+	
+}
+
+@media all and (max-width: 400px) {
+	.gros {
+		margin-top: 0;
+	}
+	.gros img.grosSerre {
+		display:none;
+	}
+	.gros img.grosSerreBulle {
+		display:inline;
+	}
+}
