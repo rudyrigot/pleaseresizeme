@@ -25,3 +25,4 @@ OTHER TALKS
 
 The talk was requested for a W3C Meetup in Lyon, France (in English, however),
 on October 29th 2012.
+
